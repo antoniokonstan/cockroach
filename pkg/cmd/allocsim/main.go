@@ -38,7 +38,7 @@ import (
 	"github.com/cockroachdb/errors"
 )
 
-var workers = flag.Int("w", 1, "number of workers; the i'th worker talks to node i%numNodes")
+var workers = flag.Int("w", 1, "number of workers; the n'th worker talks to node i%numNodes")
 var numNodes = flag.Int("n", 4, "number of nodes")
 var duration = flag.Duration("duration", math.MaxInt64, "how long to run the simulation for")
 var blockSize = flag.Int("b", 1000, "block size")
